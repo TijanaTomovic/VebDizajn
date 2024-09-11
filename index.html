@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Početna stranica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="50">
+                <span id="site-name">SMasters</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" id="nav-home">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" id="nav-about">O nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html" id="nav-services">Usluge</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" id="nav-contact">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="synonyms.html" id="nav-synonyms">Sinonimi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('en')">EN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('sr')">SR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="row nude-section">
+            <div class="col-md-6 text-center text-white py-5">
+                <h1 id="welcome-title">Dobrodošli
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
+                      </svg>
+                </h1>
+                <p id="welcome-message">Otkrijte sinonime lako i poboljšajte svoj vokabular.</p>
+                <p id="site-purpose">Naš sajt pruža jednostavan način za pronalaženje sinonima za bilo koju reč, pomažući vam da poboljšate svoje pisanje i proširite vokabular.</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center blue-box-container">
+                <div class="blue-box">
+                    <img src="slova.jpg" alt="Slika" class="img-fluid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="animated-container"></div>
+        <div class="animated-box">
+            <a href="synonym.html" class="link-text">Try Our System
+                
+            </a>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p id="footer-text">&copy; 2024 Web dizajn. Tijana Tomović.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

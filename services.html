@@ -1,0 +1,105 @@
+<!-- Primer početne stranice (index.html) -->
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna stranica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="50">
+                SMasters
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">O nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Usluge</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="synonyms.html">Sinonimi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('en')">EN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('sr')">SR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        .services-section, .portfolio-section {
+            margin: 50px 0;
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+        }
+        .portfolio-img {
+            width: 100%;
+            height: 150px;
+        }
+        .portfolio-description {
+            padding: 15px;
+        }
+        .portfolio-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .portfolio-text {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Services Section -->
+        <div class="services-section">
+            <h2 class="text-center">Naše Usluge</h2>
+            <p>Naša organizacija nudi širok spektar usluga koje su dizajnirane da zadovolje različite potrebe naših klijenata. Naša usluga uključuje:</p>
+            <p><strong>Razvoj Softverskih Rešenja:</strong> Kreiramo prilagođena softverska rešenja koja odgovaraju specifičnim potrebama vašeg poslovanja. Naša rešenja obuhvataju sve aspekte od dizajna do implementacije i podrške.</p>
+            <p><strong>Digitalni Marketing:</strong> Nudimo usluge digitalnog marketinga koje uključuju SEO, SEM, i upravljanje društvenim mrežama. Naš cilj je da poboljšamo online prisustvo vašeg brenda i privučemo više korisnika.</p>
+            <p><strong>Konsultacije i Edukacija:</strong> Pružamo konsultacije u oblasti tehnologije i marketinga. Takođe, nudimo edukativne programe kako bi vam pomogli da razvijete veštine i znanja koja su vam potrebna za uspeh.</p>
+            <p><strong>Podrška i Održavanje:</strong> Naša podrška i održavanje osiguravaju da vaša tehnologija funkcioniše besprekorno. Nudimo tehničku podršku i redovno održavanje kako bi vaš sistem bio uvek ažuran i bez problema.</p>
+        </div>
+
+        <!-- Portfolio Section -->
+        <div class="portfolio-section">
+            <h2 class="text-center">Usluge</h2>
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4 portfolio-item">
+                    <img src="resenje.jpg" class="portfolio-img" alt="Portfolio Item 1">
+                    <div class="portfolio-description">
+                        <h5 class="portfolio-title">Projekt 1</h5>
+                        <p class="portfolio-text">Ovaj projekat predstavlja našu sposobnost da kreiramo inovativna rešenja za kompleksne probleme. Radili smo na svim aspektima projekta od ideje do realizacije.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4 portfolio-item">
+                    <img src="efikasnost.gif" class="portfolio-img" alt="Portfolio Item 2">
+                    <div class="portfolio-description">
+                        <h5 class="portfolio-title">Projekt 2</h5>
+                        <p class="portfolio-text">Ovaj projekt se fokusira na optimizaciju procesa i povećanje efikasnosti. Implementirali smo napredne tehnološke rešenja kako bi poboljšali performanse klijenta.</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4 portfolio-item">
+                    <img src="strategija.png" class="portfolio-img" alt="Portfolio Item 3">
+                    <div class="portfolio-description">
+                        <h5 class="portfolio-title">Projekt 3</h5>
+                        <p class="portfolio-text">Ovaj projekt uključuje razvoj i implementaciju strategija digitalnog marketinga koje su pomogle našem klijentu da postigne značajan rast online prisustva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p id="footer-text">&copy; 2024 Web dizajn. Tijana Tomović.</p>
+    </footer>
+</body>

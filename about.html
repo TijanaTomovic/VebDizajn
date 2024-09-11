@@ -1,0 +1,97 @@
+<!-- Primer početne stranice (index.html) -->
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna stranica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="Logo" width="50">
+                SMasters
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">O nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Usluge</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="synonyms.html">Sinonimi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('en')">EN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="changeLanguage('sr')">SR</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        
+        .about-section {
+            margin: 20px 0;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .col-md-4 {
+            margin-top: 70px;
+        }
+        .card {
+            margin-left: 200px;
+            width: 100%; /* Optional: Adjust the width of the card */
+        }
+    </style>
+</head>
+<body>
+    <div class="container about-section">
+        <div class="row text-center">
+            <!-- Autor -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="autor.PNG" class="autor" alt="Tijana Tomovic">
+                    <div class="card-body">
+                        <h5 class="card-title">Tijana Tomovic</h5>
+                        <p class="card-text">Tijana Tomović je studentkinja na Fakultetu za informacione tehnologije, gde se fokusira na razvoj softverskih rešenja i digitalnih alata. Sa strašću prema jeziku i tehnologiji, Tijana je kreirala ovaj sajt kako bi pomogla korisnicima da poboljšaju svoje veštine pisanja kroz precizne i korisne sinonime.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ciljevi.jpg" class="ciljevi" alt="Organizacija i Ciljevi">
+                    <div class="card-body">
+                        <h5 class="card-title">Organizacija i Ciljevi</h5>
+                        <p class="card-text">Naša organizacija posvećena je pružanju tačnih i korisnih informacija o sinonimima kako bi olakšala komunikaciju i pisanje. Cilj nam je omogućiti korisnicima brzi pristup bogatom rečniku sinonima kako bi poboljšali svoje veštine pisanja i izražavanja. Ulaganje u razvoj kvalitetnih resursa i alati za jezičku podršku deo je naše misije da doprinesemo boljoj komunikaciji u pisanju.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Istorija -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="istorija.jpg" class="istorija" alt="Istorija">
+                    <div class="card-body">
+                        <h5 class="card-title">Istorija O Nama</h5>
+                        <p class="card-text">Naša platforma je osnovana 2024. godine sa namerom da ponudi jednostavan alat za pronalaženje sinonima. Tokom godina, razvili smo se i proširili našu bazu podataka kako bismo obuhvatili širok spektar jezika i termina. Naša posvećenost konstantnom unapređenju funkcionalnosti sajta i proširenju resursa čini nas pouzdanim partnerom za sve koji traže kvalitetne jezičke alate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer class="bg-light text-center py-4">
+        <p id="footer-text">&copy; 2024 Web dizajn. Tijana Tomović.</p>
+    </footer>
+</body>
+</html>
+
